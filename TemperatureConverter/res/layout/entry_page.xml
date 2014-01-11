@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Fedor Tsyganov -->
+<!-- Date: 9/26/2013 -->
+<!-- Application: TemperatureConverter -->
+<!-- File: entry_page.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical" >
+
+<TableLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" 
+     android:layout_gravity="center_horizontal">
+     <TableRow>
+         <TextView 
+            android:id="@+id/nameSign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:gravity="right"
+            />
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:singleLine="true" 
+        android:hint="@string/hintName" >
+
+        <requestFocus />
+    </EditText>
+    </TableRow>
+    <TableRow>
+        <TextView 
+            android:id="@+id/passwordSign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:gravity="right"
+            />
+      <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        />
+      </TableRow>
+        
+</TableLayout>
+<!-- Adding button, so if user dont use TAB, he can press a button -->
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonSubmit" 
+        android:gravity="center|center_vertical"
+         />
+
+</LinearLayout>

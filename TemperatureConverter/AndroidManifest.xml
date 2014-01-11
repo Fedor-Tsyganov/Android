@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Fedor Tsyganov -->
+<!-- Date: 10/03/2013 -->
+<!-- Application: TemperatureConverter -->
+<!-- File: TemperatureConverter Manifest.xml -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cs211d.temperatureconverter"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cs211d.temperatureconverter.EntryPage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cs211d.temperatureconverter.TemperatureConverter"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.TEMPERATURECONVERTER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cs211d.temperatureconverter.SeeScores"
+            android:label="@string/title_activity_see_scores" >
+        </activity>
+    </application>
+
+</manifest>

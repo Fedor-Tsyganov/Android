@@ -1,0 +1,13 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="AppBaseTheme" parent="android:Theme.Light">    
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+       <item name="android:windowTitleSize">150dip</item>
+       <item name="android:windowTitleStyle">@style/titleTextStyle</item>
+    </style>
+	<style name="titleTextStyle" >
+    	<item name="android:textSize">40dip</item>
+    	<item name="android:textColor">#FFFFFF</item>
+	</style>
+</resources>
